@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "target": "es6",
+    "module": "commonjs",
+    "jsx": "react",
+    "allowSyntheticDefaultImports": true
+  },
+  "include": [
+    "src/components/Card.jsx",
+    "src/components/Footer.jsx",
+    "src/components/Header.jsx"
+  ],
+  "exclude": ["node_modules"]
+
+}

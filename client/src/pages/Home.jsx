@@ -1,42 +1,12 @@
 import React from "react";
+import Header from "../components/Header";
+import Footer from "../components/Footer";
+
 
 const Home = () => {
   return (
-    
     <div className="bg-gray-50 overflow-x-hidden">
-      {/* Header Section */}
-      <header className="bg-gradient-to-tr from-black to-neutral-700 text-white py-4">
-        <div className="container mx-auto flex justify-between items-center px-6">
-          <a href="/" className="text-2xl font-bold font-cursive">
-            Feane
-          </a>
-          <nav className="hidden md:flex space-x-6 flex-1 justify-center">
-            <a href="#" className="hover:text-yellow-500 uppercase">
-              Home
-            </a>
-            <a href="#" className="hover:text-yellow-500 uppercase">
-              Menu
-            </a>
-            <a href="#" className="hover:text-yellow-500 uppercase">
-              About
-            </a>
-            <a href="#" className="hover:text-yellow-500 uppercase">
-              Contact
-            </a>
-          </nav>
-          <div className="flex items-center space-x-4">
-            <img
-              src="https://via.placeholder.com/40"
-              alt="Profile"
-              className="w-10 h-10 rounded-full"
-            />
-            <button className="bg-yellow-500 text-white px-4 py-2 rounded-full hover:bg-yellow-600">
-              Logout
-            </button>
-          </div>
-          <button className="md:hidden text-2xl">☰</button>
-        </div>
-      </header>
+    
 
       {/* Hero Section */}
       <section
@@ -45,8 +15,8 @@ const Home = () => {
       >
         <div className="absolute inset-0 bg-gradient-to-t from-black to-transparent"></div>
         <div className="container mx-auto flex items-center justify-center h-full relative z-10">
-          <div className="text-center text-white">
-            <h1 className="text-5xl font-cursive font-bold mb-4">Welcome to Feane</h1>
+          <div className="text-center mt-60 text-white">
+            <h1 className="text-5xl font-cursive font-bold mb-4">Welcome to 64</h1>
             <p className="text-lg mb-6">Your favorite place for delicious meals</p>
             <a
               href="#"
@@ -57,10 +27,9 @@ const Home = () => {
           </div>
         </div>
       </section>
-      
 
       {/* Offer Section */}
-      <section className="py-16 bg-white">
+      <section className="py-16 p-10 bg-white">
         <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
           <div className="bg-gray-900 text-white p-6 rounded-lg flex items-center">
             <img
@@ -121,11 +90,11 @@ const Home = () => {
               Pasta
             </li>
           </ul>
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 pl-10 sm:grid-cols-2 md:grid-cols-3 gap-8">
             {/* Menu Item */}
-            <div className="bg-white rounded-lg shadow-lg overflow-hidden">
+            <div className="bg-white rounded-lg shadow-lg overflow-hidden transform transition duration-500 hover:scale-105">
               <img
-                src="https://via.placeholder.com/300"
+                src="/images/menu-item.jpg"
                 alt="Menu Item"
                 className="w-full h-40 object-cover"
               />
@@ -134,7 +103,7 @@ const Home = () => {
                 <p className="text-sm text-gray-600 mb-4">
                   A delightful blend of flavors and toppings.
                 </p>
-                <div className="flex items-center justify-between">
+                <div className="flex items-center justify-between mb-4">
                   <span className="text-xl font-bold">$20</span>
                   <a
                     href="#"
@@ -143,39 +112,16 @@ const Home = () => {
                     Order
                   </a>
                 </div>
+                <div className="flex items-center">
+                  <span className="text-yellow-500">★★★★☆</span>
+                  <span className="ml-2 text-gray-600">(120 reviews)</span>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Footer Section */}
-      <footer className="bg-gray-900 text-white py-12">
-        <div className="container mx-auto text-center">
-          <h4 className="text-2xl font-cursive">Contact Us</h4>
-          <p className="mt-2">Location: 123 Delicious Avenue, Food Town</p>
-          <div className="mt-4 flex justify-center space-x-4">
-            <a
-              href="#"
-              className="w-8 h-8 bg-yellow-500 text-white rounded-full flex items-center justify-center hover:bg-yellow-600"
-            >
-              F
-            </a>
-            <a
-              href="#"
-              className="w-8 h-8 bg-yellow-500 text-white rounded-full flex items-center justify-center hover:bg-yellow-600"
-            >
-              T
-            </a>
-            <a
-              href="#"
-              className="w-8 h-8 bg-yellow-500 text-white rounded-full flex items-center justify-center hover:bg-yellow-600"
-            >
-              I
-            </a>
-          </div>
-        </div>
-      </footer>
     </div>
   );
 };
