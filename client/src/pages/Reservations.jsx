@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 
+
 const Reservations = () => {
   const [formData, setFormData] = useState({
     name: "",
@@ -23,6 +24,7 @@ const Reservations = () => {
 
   return (
     <div className="bg-gray-50 min-h-screen">
+
       <section className="py-16 bg-gray-50">
         <div className="container mx-auto text-center">
           <h2 className="text-4xl font-cursive font-bold mb-8">Table Reservation</h2>
@@ -129,6 +131,8 @@ const Reservations = () => {
           )}
         </div>
       </section>
+  
+   
     </div>
   );
 };

@@ -1,5 +1,6 @@
 import React from "react";
 
+
 const Promo = () => {
   const promos = [
     {
@@ -24,6 +25,9 @@ const Promo = () => {
 
   return (
     <div className="bg-gray-50 p-10 min-h-screen">
+ 
+   
+
       <section className="py-16 bg-gray-50">
         <div className="container mx-auto text-center">
           <h2 className="text-4xl font-cursive font-bold mb-8">Our Promotions</h2>
@@ -51,6 +55,9 @@ const Promo = () => {
           </div>
         </div>
       </section>
+   
+   
+
     </div>
   );
 };

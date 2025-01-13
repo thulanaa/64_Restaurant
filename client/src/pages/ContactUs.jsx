@@ -1,8 +1,7 @@
 import React from "react";
 
 const ContactUs = () => {
-  return (
-    
+  return (    
     <div className="bg-gray-50 p-10 min-h-screen">
       <section className="py-16  bg-gray-50">
         <div className="container mx-auto text-center">
